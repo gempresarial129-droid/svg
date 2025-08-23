@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Resumen_del_día" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 500">
+  <defs>
+    <style>
+      .titulo {
+        font-family: "Gotham", sans-serif;
+        font-weight: 700;
+        font-size: 36px;
+        fill: #0f046a;
+      }
+      .subtitulo {
+        font-family: "Gotham", sans-serif;
+        font-size: 48px;
+        fill: #0f046a;
+      }
+      .ventas_titulo {
+        font-family: "Gotham", sans-serif;
+        font-weight: 700;
+        font-size: 48px;
+        fill: #0f046a;
+      }
+      .ventas_subtitulo {
+        font-family: "Gotham", sans-serif;
+        font-size: 60px;
+        fill: #0f046a;
+      }
+      .principal_titulo {
+        font-family: "Gotham", sans-serif;
+        font-weight: 700;
+        font-size: 60px;
+        fill: #ffff7d;
+      }
+      .principal_subtitulo {
+        font-family: "Gotham", sans-serif;
+        font-weight: 700;
+        font-size: 72px;
+        fill: #ffff7d;
+      }
+      .icono {
+        fill: #e6e6e6;
+      }
+      .fondo{
+        fill: #fff;
+        filter: url(#fondo);
+      }
+      .principal_fondo {
+        fill: #0f046a;
+        filter: url(#principal_fondo);
+      }
+    </style>
+    <filter id="fondo" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="0" />
+      <feGaussianBlur result="blur" stdDeviation="5" />
+      <feFlood flood-color="#000" flood-opacity="1" />
+      <feComposite in2="blur" operator="in" />
+      <feComposite in="SourceGraphic" />
+    </filter>
+    <filter id="principal_fondo" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="0" />
+      <feGaussianBlur result="blur-2" stdDeviation="10" />
+      <feFlood flood-color="#000" flood-opacity="1" />
+      <feComposite in2="blur-2" operator="in" />
+      <feComposite in="SourceGraphic" />
+    </filter>
+  </defs>
+  <g id="Total">
+    <rect class="principal_fondo" x="525" y="25" width="450" height="200" rx="20" ry="20" />
+    <text class="principal_titulo" transform="translate(574.57 113.24)">
+      <tspan x="0" y="0">TOTAL</tspan>
+    </text>
+    <text class="principal_subtitulo" transform="translate(575 193.39)">
+      <tspan x="0" y="0">{TOTAL}</tspan>
+    </text>
+  </g>
+  <g id="Compras">
+    <rect class="fondo" x="25" y="275" width="300" height="200" rx="20" ry="20" />
+    <g>
+      <ellipse class="icono" cx="290.1" cy="345.01" rx="5" ry="4.99" />
+      <ellipse class="icono" cx="265.09" cy="345" rx="5" ry="4.99" />
+      <path class="icono" d="M250,300.02h8.28l2.18,4.99h37.04c1.56,0,2.5,.94,2.5,2.5s0,.78-.46,1.24l-9.06,16.22c-.78,1.56-2.18,2.5-4.22,2.5h-18.44l-2.18,4.21v.32c0,.32,.32,.46,.46,.46h29.06v4.99h-30.16c-2.82,0-5-2.18-5-4.99s.32-1.72,.46-2.5l3.6-5.93-9.06-19.03h-5v-4.97Z" />
+    </g>
+    <text class="titulo" transform="translate(50 340.44)">
+      <tspan x="0" y="0">COMPRAS</tspan>
+    </text>
+    <text class="subtitulo" transform="translate(50 420.59)">
+      <tspan x="0" y="0">{COMPRAS}</tspan>
+    </text>
+  </g>
+  <g id="Ventas">
+    <rect class="fondo" x="25" y="25" width="450" height="200" rx="20" ry="20" />
+    <path class="icono" d="M449.58,102.94l-3.87-21.1c-.36-2.1-2.19-3.66-4.32-3.66h-35.74v-9.6h11.85c2.43,0,4.38-1.98,4.38-4.38v-9.81c0-2.43-1.98-4.38-4.38-4.38h-33.22c-2.43,0-4.38,1.98-4.38,4.38v9.81c0,2.43,1.98,4.38,4.38,4.38h11.85v9.6h-12.45c-2.13,0-3.96,1.56-4.32,3.66l-3.87,21.1c-.33,1.83-.48,3.69-.48,5.55l.12,12.12c0,2.43,1.98,4.38,4.38,4.38h66c2.43,0,4.38-1.98,4.38-4.38l.12-12.12c0-1.86-.15-3.72-.48-5.55h.06Zm-33.22-17.02c0-1.05,.84-1.89,1.89-1.89h2.94c1.05,0,1.89,.84,1.89,1.89v3.06c0,1.05-.84,1.89-1.89,1.89h-2.94c-1.05,0-1.89-.84-1.89-1.89v-3.06Zm-7.2,11.7c0-1.05,.84-1.89,1.89-1.89h2.94c1.05,0,1.89,.84,1.89,1.89v3.06c0,1.05-.84,1.89-1.89,1.89h-2.94c-1.05,0-1.89-.84-1.89-1.89v-3.06Zm-2.07-13.63c1.05,0,1.89,.84,1.89,1.89v3.06c0,1.05-.84,1.89-1.89,1.89h-2.94c-1.05,0-1.89-.84-1.89-1.89v-3.06c0-1.05,.84-1.89,1.89-1.89h2.94Zm-20.11-22.54v-4.38h27.82v4.38h-27.82Zm6,29.41h-2.94c-1.05,0-1.89-.84-1.89-1.89v-3.06c0-1.05,.84-1.89,1.89-1.89h2.94c1.05,0,1.89,.84,1.89,1.89v3.06c0,1.05-.84,1.89-1.89,1.89Zm1.89,9.81v-3.06c0-1.05,.84-1.89,1.89-1.89h2.94c1.05,0,1.89,.84,1.89,1.89v3.06c0,1.05-.84,1.89-1.89,1.89h-2.94c-1.05,0-1.89-.84-1.89-1.89Zm31.54,14.98c0,1.14-.93,2.07-2.07,2.07h-23.68c-1.14,0-2.07-.93-2.07-2.07v-.24c0-1.14,.93-2.07,2.07-2.07h23.68c1.14,0,2.07,.93,2.07,2.07v.24Zm3.72-14.98c0,1.05-.84,1.89-1.89,1.89h-2.94c-1.05,0-1.89-.84-1.89-1.89v-3.06c0-1.05,.84-1.89,1.89-1.89h2.94c1.05,0,1.89,.84,1.89,1.89v3.06Zm7.02-11.7c0,1.05-.84,1.89-1.89,1.89h-2.94c-1.05,0-1.89-.84-1.89-1.89v-3.06c0-1.05,.84-1.89,1.89-1.89h2.94c1.05,0,1.89,.84,1.89,1.89v3.06Z" />
+    <text class="ventas_titulo" transform="translate(50 108.09)">
+      <tspan x="0" y="0">VENTAS</tspan>
+    </text>
+    <text class="ventas_subtitulo" transform="translate(50 188.24)">
+      <tspan x="0" y="0">{VENTAS}</tspan>
+    </text>
+  </g>
+  <g id="Gastos">
+    <rect class="fondo" x="350" y="275" width="300" height="200" rx="20" ry="20" />
+    <g>
+      <path class="icono" d="M611.44,315.5c-1.54-1.16-3.9-2.47-4.9-3h-13.22c-1.26,.61-3,1.57-4.9,3-9.74,7.37-16.81,22.35-11.75,30,.68,1.02,1.9,2.42,4.27,3.54,1.36,.65,2.86,.96,4.36,.96h29.29c3.39,0,6.58-1.65,8.55-4.46l.03-.04c5.2-7.44-1.43-22.23-11.75-30Zm-10.57,24.94v3.12h-1.89v-3.03c-1.74-.03-3.54-.57-4.59-1.32l.72-2.01c1.08,.72,2.64,1.29,4.32,1.29,2.13,0,3.57-1.23,3.57-2.94s-1.17-2.67-3.39-3.57c-3.06-1.2-4.95-2.58-4.95-5.19s1.77-4.38,4.53-4.83v-3.03h1.86v2.91c1.8,.06,3.03,.54,3.9,1.05l-.75,1.98c-.63-.36-1.86-1.02-3.78-1.02-2.31,0-3.18,1.38-3.18,2.58,0,1.56,1.11,2.34,3.72,3.42,3.09,1.26,4.65,2.82,4.65,5.49,0,2.37-1.65,4.59-4.74,5.1Z" />
+      <path class="icono" d="M606.54,309.5h-13.22l-4.3-8.06c-.33-.66,.15-1.44,.89-1.44h20.05c.73,0,1.21,.78,.89,1.44l-4.3,8.06Z" />
+    </g>
+    <text class="titulo" transform="translate(375 340.44)">
+      <tspan x="0" y="0">GASTOS</tspan>
+    </text>
+    <text class="subtitulo" transform="translate(375 420.59)">
+      <tspan x="0" y="0">{GASTOS}</tspan>
+    </text>
+  </g>
+  <g id="Pedidos">
+    <rect class="fondo" x="675" y="275" width="300" height="200" rx="20" ry="20" />
+    <path id="_Trazado_compuesto_" class="icono" d="M935.74,336.22c3.32,0,6.05,3.11,6.05,6.89s-2.73,6.89-6.05,6.89-6.05-3.11-6.05-6.89c0-4,2.73-6.89,6.05-6.89Zm-31.25,0c3.32,0,6.05,3.11,6.05,6.89s-2.73,6.89-6.05,6.89-6.05-3.11-6.05-6.89c0-4,2.73-6.89,6.05-6.89Zm27.34-24.44v11.78h13.87c0-.67-.59-1.78-.98-2.44l-5.47-8.67s-.59-.67-.98-.67h-6.45Zm-5.27-5.78h11.72l11.72,17.78v14.89c0,1.56-1.17,2.89-2.54,2.89h-2.54c-.59-5.11-4.49-9.11-9.18-9.11s-8.4,4-9.18,9.11c-1.37,0-2.54-1.33-2.54-2.89v-29.78c0-1.56,1.17-2.89,2.54-2.89Zm-39.06-6h33.79v41.56h-8.2c-.59-4.89-4.3-8.67-8.79-8.67s-8.01,3.78-8.79,8.67h-8.01v-41.56Z" />
+    <text class="titulo" transform="translate(700 340.44)">
+      <tspan x="0" y="0">PEDIDOS</tspan>
+    </text>
+    <text class="subtitulo" transform="translate(700 420.59)">
+      <tspan x="0" y="0">{PEDIDOS}</tspan>
+    </text>
+  </g>
+</svg>
