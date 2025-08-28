@@ -6,6 +6,13 @@ const express = require("express");
      const app = express();
      const PORT = process.env.PORT || 3000;
 
+     // Habilitar CORS
+     app.use((req, res, next) => {
+       res.header("Access-Control-Allow-Origin", "*");
+       res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+       next();
+     });
+
      app.get("/svg/:file", async (req, res) => {
        const { file } = req.params;
        const filePath = path.join(__dirname, "svg", file);
@@ -31,14 +38,12 @@ const express = require("express");
            const logoDataUri = `data:${mimeType};base64,${logoBase64}`;
            svgContent = svgContent.replace(/\{LOGO\}/g, logoDataUri);
 
-           // Generar Data URI para el SVG
-           const svgBase64 = Buffer.from(svgContent).toString("base64");
-           const dataUri = `data:image/svg+xml;base64,${svgBase64}`;
-
-           res.send(dataUri); // Devuelve Data URI
+           // Enviar SVG con tipo MIME correcto
+           res.setHeader("Content-Type", "image/svg+xml");
+           res.send(svgContent);
          } catch (error) {
-           console.error("Error generating Data URI:", error);
-           res.status(500).send("Error generating Data URI");
+           console.error("Error generando SVG:", error);
+           res.status(500).send("Error generando SVG");
          }
        });
      });
