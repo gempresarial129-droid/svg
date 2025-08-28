@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="612" height="792" viewBox="0 0 612 792">
+<svg id="Nota_de_Venta" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="612" height="792" viewBox="0 0 612 792">
   <g>
     <rect width="612" height="39.75" style="fill:{NAVY};" />
     <path d="M0,50.25V0H306V35.25c0,.98-.1,1.96-.29,2.93-.19,.97-.48,1.9-.85,2.81-.38,.91-.84,1.77-1.39,2.59-.55,.82-1.17,1.58-1.87,2.27s-1.45,1.32-2.27,1.87-1.68,1.01-2.59,1.39c-.91,.38-1.85,.66-2.81,.85-.97,.19-1.94,.29-2.93,.29H0Z" style="fill:{YELLOW};" />
@@ -299,12 +299,5 @@
     <text transform="translate(445.61 147.77)" style="fill:#ccc; font-family:ArialMT, Arial; font-size:21px;">
       <tspan x="0" y="0">LOGO</tspan>
     </text>
-    <image 
-    xlink:href="{LOGO}"
-    x="401.25"
-    y="65.25"
-    width="150"
-    height="150"
-  />
   </g>
 </svg>
