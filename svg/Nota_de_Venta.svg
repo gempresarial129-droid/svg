@@ -296,7 +296,7 @@
   </g>
   <g>
   <image 
-    xlink:href="https://placehold.co/600x400"
+    xlink:href="{LOGO}"
     x="401.25" 
     y="65.25" 
     width="150"
